@@ -1,0 +1,8 @@
+*
+!*.*
+*.o
+*.vcd
+work-obj93.cf
+!*/*
+!component
+!pkg
