@@ -1,6 +1,7 @@
 include ../constants.mk
 MODULES=\
 	vaddr_decoder \
-	entry_addr
+	entry_addr \
+	cache_decoder
 TESTS=
 include ../rules.mk
