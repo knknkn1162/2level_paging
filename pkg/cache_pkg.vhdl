@@ -10,6 +10,7 @@ package cache_pkg is
   subtype cache_offset_vector is std_logic_vector(CONST_CACHE_OFFSET_SIZE-1 downto 0);
   subtype cache_index_vector is std_logic_vector(CONST_CACHE_INDEX_SIZE-1 downto 0);
   subtype cache_tag_vector is std_logic_vector(CONST_CACHE_TAG_SIZE-1 downto 0);
+  subtype cache_tag_index_vector is std_logic_vector(CONST_CACHE_TAG_SIZE+CONST_CACHE_INDEX_SIZE-1 downto 0);
 
   type valid_array_type is array(natural range<>) of std_logic;
   type dirty_array_type is array(natural range<>) of std_logic;
