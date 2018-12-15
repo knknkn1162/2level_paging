@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.type_pkg.ALL;
 
-entity decode_virtual_addr is
+entity vaddr_decoder is
   port (
     i_addr : in std_logic_vector(31 downto 0);
     o_directory : out page_index_vector;
@@ -11,7 +11,7 @@ entity decode_virtual_addr is
   );
 end entity;
 
-architecture behavior of decode_virtual_addr is
+architecture behavior of vaddr_decoder is
 begin
   o_directory <= i_addr(31 downto 22);
   o_table <= i_addr(21 downto 12);
