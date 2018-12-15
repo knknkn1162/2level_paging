@@ -1,9 +1,8 @@
 test: $(OBJS) $(TESTBENCHES)
 
-%_tb:
-	$(GHDLC) -r ${FLAGS} ${F}_tb --vcd=${VCDFILE} ${TB_OPTION}
-
-%: %.o
+%_tb: %_tb.o
 	$(GHDLC) -e $(FLAGS) $@
+	$(GHDLC) -r ${FLAGS} $@ --vcd=${VCDFILE} ${TB_OPTION}
+
 %.o: %.vhdl
 	$(GHDLC) -a $(FLAGS) $<

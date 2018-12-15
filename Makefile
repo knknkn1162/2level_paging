@@ -1,4 +1,5 @@
-SUBDIRS=pkg component
+include constants.mk
+SUBDIRS=general pkg component
 
 .PHONY: all clean open
 
@@ -10,4 +11,4 @@ all:
 clean:
 	rm -f work-obj93.cf *.o *.vcd
 open:
-	open $(VCDFILE)
+	open out.vcd

@@ -1,7 +1,7 @@
 GHDLC=ghdl
+VCDFILE=../out.vcd
 FLAGS=--warn-error --workdir=../
 TB_OPTION=--assert-level=error
-VCDFILE=out.vcd
 MODULES=
 TESTS=
 OBJS=$(addsuffix .o, ${MODULES})
