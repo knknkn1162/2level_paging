@@ -1,5 +1,6 @@
 include ../constants.mk
 MODULES=\
-	type_pkg
+	type_pkg \
+	cache_pkg
 TESTS=
 include ../rules.mk
