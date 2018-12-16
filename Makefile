@@ -1,5 +1,5 @@
 include constants.mk
-SUBDIRS=general pkg component
+SUBDIRS=general pkg controller component
 
 .PHONY: all clean open
 
