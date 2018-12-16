@@ -6,6 +6,7 @@ SUBDIRS=general pkg component
 all:
 	list='$(SUBDIRS)'; for subdir in $$list; do \
 	$(MAKE) -C $$subdir || exit 1;\
+	echo "$$subdir directory done";\
 	done
 
 clean:
